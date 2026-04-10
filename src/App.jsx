@@ -14,12 +14,11 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <TrustBar />
-        <About />
-        <ValueProp />
-        <SignupForm />
-        <Testimonials />
         <InstagramSection />
+        <SignupForm />
+        <ValueProp />
+        <About />
+        <Testimonials />
       </main>
       <Footer />
     </>
