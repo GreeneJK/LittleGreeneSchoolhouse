@@ -6,10 +6,11 @@ export default function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-img-wrapper">
-            <div className="about-img-placeholder">
-              <div className="placeholder-icon" aria-hidden="true">📸</div>
-              Mrs. Greene photo<br /><em>(your headshot or classroom image)</em>
-            </div>
+            <img
+              src="/kimberly-greene.jpg"
+              alt="Kimberly Greene — The Little Greene Schoolhouse"
+              className="about-img"
+            />
           </div>
           <div className="about-text">
             <div className="section-label">Meet Mrs. Greene</div>

@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <div className="dot" aria-hidden="true"></div>
-            Educator on Sabbatical &middot; Critical Thinking Advocate
+            Critical Thinking Advocate
           </div>
 
           <h1>Grow <em>Every</em> Thinker<br />in Your Building</h1>
