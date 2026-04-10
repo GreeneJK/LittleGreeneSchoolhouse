@@ -5,26 +5,13 @@
 .ig-sub {
   max-width: 500px; margin: 0 auto;
 }
-.ig-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 16px; margin-top: 32px;
-}
-.ig-card {
-  aspect-ratio: 1;
-  background: var(--sage-light);
+.ig-embed-wrapper {
+  margin-top: 32px;
+  max-width: 100%;
+  overflow: hidden;
   border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--text-muted); font-size: 0.8rem;
-  border: 1px solid var(--gray-200);
-  transition: var(--transition);
-}
-.ig-card:hover { transform: scale(1.03); box-shadow: var(--shadow); }
-
-.ig-follow-btn {
-  margin-top: 28px;
-  border-color: var(--green); color: var(--green);
 }
 
 @media (max-width: 768px) {
-  .ig-grid { grid-template-columns: repeat(2, 1fr); }
+  .instagram-section { padding: 48px 0; }
 }

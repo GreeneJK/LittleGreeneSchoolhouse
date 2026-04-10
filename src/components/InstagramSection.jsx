@@ -1,13 +1,17 @@
+import { useEffect } from 'react';
 import './InstagramSection.css';
 
-const IG_POSTS = [
-  'Sip & Think #12',
-  'Talent in Every Child',
-  'Critical Thinking Tips',
-  'Equity in GT Ed',
-];
-
 export default function InstagramSection() {
+  useEffect(() => {
+    // Load Elfsight platform script once
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://elfsightcdn.com/platform.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="instagram-section" id="instagram">
       <div className="container text-center">
@@ -17,22 +21,12 @@ export default function InstagramSection() {
           Daily doses of critical thinking, talent development, and educator encouragement on Instagram.
         </p>
 
-        <div className="ig-grid">
-          {IG_POSTS.map((label) => (
-            <div className="ig-card" key={label}>
-              {label}
-            </div>
-          ))}
+        <div className="ig-embed-wrapper">
+          <div
+            className="elfsight-app-8fe69861-16df-4fa2-9472-fa5b891f1d99"
+            data-elfsight-app-lazy
+          />
         </div>
-
-        <a
-          href="https://www.instagram.com/thelittlegreeneschoolhouse/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-outline ig-follow-btn"
-        >
-          Follow on Instagram &rarr;
-        </a>
       </div>
     </section>
   );
