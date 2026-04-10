@@ -65,7 +65,7 @@ export default async function handler(req, res) {
 
       // Surface user-friendly message for common issues
       if (beehiivRes.status === 409) {
-        return res.status(200).json({ success: true, message: 'You're already subscribed!' });
+        return res.status(200).json({ success: true, message: "You're already subscribed!" });
       }
       return res.status(502).json({ error: 'Unable to subscribe right now. Please try again.' });
     }
