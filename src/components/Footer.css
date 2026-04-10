@@ -1,0 +1,22 @@
+.footer {
+  background: var(--green-deep);
+  color: rgba(255,255,255,0.7);
+  padding: 48px 0 32px;
+  text-align: center;
+}
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; font-weight: 700; color: var(--white);
+  margin-bottom: 8px;
+}
+.footer p { color: rgba(255,255,255,0.5); font-size: 0.88rem; }
+.footer-links {
+  display: flex; justify-content: center; gap: 24px;
+  margin: 20px 0;
+}
+.footer-links a {
+  color: rgba(255,255,255,0.6); font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--white); }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); margin-top: 24px; }

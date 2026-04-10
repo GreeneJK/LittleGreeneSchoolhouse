@@ -1,0 +1,41 @@
+/* ============================================================
+   CSS CUSTOM PROPERTIES — The Little Greene Schoolhouse
+   ============================================================ */
+:root {
+  /* Brand greens */
+  --green:        #5B7B5E;
+  --green-dark:   #3D5A40;
+  --green-deep:   #2C4A2E;
+  --sage:         #A8BFA0;
+  --sage-light:   #D4E4CF;
+  --sage-pale:    #EDF4EB;
+
+  /* Neutrals */
+  --cream:        #FAF8F4;
+  --warm-white:   #FEFDFB;
+  --white:        #FFFFFF;
+  --wood:         #C4A876;
+  --wood-light:   #E8D9B8;
+
+  /* Text */
+  --text:         #2A3B2C;
+  --text-light:   #5A6B5C;
+  --text-muted:   #8A9B8C;
+
+  /* Grays */
+  --gray-100:     #F5F5F3;
+  --gray-200:     #E8E8E4;
+
+  /* Radii */
+  --radius:       12px;
+  --radius-lg:    20px;
+  --radius-xl:    28px;
+
+  /* Shadows */
+  --shadow:       0 4px 24px rgba(43,74,46,0.08);
+  --shadow-lg:    0 12px 48px rgba(43,74,46,0.12);
+  --shadow-sm:    0 2px 12px rgba(43,74,46,0.06);
+
+  /* Motion */
+  --transition:   0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
